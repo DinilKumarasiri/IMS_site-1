@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Bannner = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden px-2 md:px-10 text-center flex flex-col gap-5 items-center justify-center md:justify-start">
+    <section className="relative h-screen w-full overflow-hidden px-2 md:px-10 text-center flex flex-col gap-5 items-center justify-center md:justify-start banner-gradient">
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const Bannner = () => {
         </Link>
         <Link
           href="/contact"
-          className="bg-white px-[2rem] py-[0.6rem] rounded-xl md:ml-2.5 font-semibold border-2 border-black"
+          className="bg-white px-[2rem] py-[0.6rem]  rounded-xl md:ml-2.5 font-semibold border-2 border-black"
         >
           Contact Us
         </Link>
@@ -51,7 +51,7 @@ const Bannner = () => {
         transition={{
           delay: 0.3,
         }}
-        className="absolute px-5 -bottom-[5rem] md:-bottom-[15rem] lg:-bottom-[30rem]"
+        className="absolute px-10 -bottom-[5rem] md:-bottom-[15rem] lg:-bottom-[30rem]"
       >
         <Image
           src="/background-main.png"
