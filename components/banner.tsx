@@ -51,7 +51,7 @@ const Bannner = () => {
         transition={{
           delay: 0.3,
         }}
-        className="absolute px-5 -bottom-[10rem] md:-bottom-[15rem] lg:-bottom-[30rem]"
+        className="absolute px-5 -bottom-[5rem] md:-bottom-[15rem] lg:-bottom-[30rem]"
       >
         <Image
           src="/background-main.png"
