@@ -13,13 +13,6 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      keyframes: {
-        dash: {
-          to: {
-            backgroundPosition: "100% 0",
-          },
-        },
-      },
     },
   },
   plugins: [],

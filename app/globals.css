@@ -9,3 +9,13 @@
     rgba(255, 255, 255, 0.3394607843137255) 13%
   );
 }
+
+.marquee-partner {
+  animation: marquee 120s linear infinite;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
