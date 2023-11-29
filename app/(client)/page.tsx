@@ -3,7 +3,7 @@ import Bannner from "@/components/banner";
 import Footer from "@/components/footer";
 import Partner from "@/components/partner";
 import Product from "@/components/product";
-import Services from "@/components/services";
+import Service from "@/components/service";
 import React from "react";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
     <main className="flex flex-col">
       <Bannner />
       <About />
-      <Services />
+      <Service />
       <hr className="w-[80%] h-1 mx-auto" />
       <Product />
       <Partner />

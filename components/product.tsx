@@ -1,13 +1,12 @@
 "use client";
 
 import { client } from "@/lib/sanity.client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { urlForImage } from "@/lib/sanity.client";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import Link from "next/link";
+import Card from "./card";
 
-type ProductProps = {
+type CardProps = {
   title: string;
   description: string;
   image: SanityImageSource;
@@ -22,7 +21,7 @@ async function getProducts() {
 }
 
 const Product = () => {
-  const [data, setData] = useState<ProductProps[] | null>();
+  const [data, setData] = useState<CardProps[] | null>();
 
   useEffect(() => {
     getProducts().then((data) => setData(data));
@@ -36,26 +35,9 @@ const Product = () => {
       {data?.length ? (
         <div className="mx-auto grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
           {data?.map((item, index) => (
-            <div
-              key={index}
-              className=" w-[20rem] h-[30rem] shadow-2xl rounded-xl flex flex-col gap-5 items-center justify-between pb-5 pt-2 border-2 border-black"
-            >
-              <div className="w-full h-[60%] px-1">
-                <Image
-                  src={urlForImage(item.image).url()}
-                  alt={item.title}
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-contain rounded-t-xl"
-                />
-              </div>
-              <div className=" flex-1 mt-5 px-4 flex flex-col items-start justify-start gap-4">
-                <h4 className="font-semibold">{item.title}</h4>
-                <p className="text-sm text-gray-500 text-justify line-clamp-5">
-                  {item.description}
-                </p>
-              </div>
-            </div>
+            <React.Fragment key={index}>
+              <Card {...item} />
+            </React.Fragment>
           ))}
         </div>
       ) : (
