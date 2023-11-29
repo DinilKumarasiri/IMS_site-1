@@ -70,9 +70,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-[80%] m-auto border-t-2 border-gray-500/25" />
-      <div className="flex  items-center justify-around pb-10 pt-10">
+      <div className="flex flex-col md:flex-row items-center justify-around gap-3 pb-10 pt-10">
         <p className="text-sm text-gray-500">
-          &copy; 2024 ISM Systems. All rights reserved.
+          &copy; 2024 IMS Systems. All rights reserved.
         </p>
         <Link
           href="https://shanukapeiris.netlify.app/"
