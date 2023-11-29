@@ -41,7 +41,7 @@ const Bannner = () => {
             Learn More
           </Link>
           <Link
-            href="/contact"
+            href="/mailto:support@imsaasia.com"
             className="z-10 bg-white px-[2rem] py-[0.6rem]  rounded-xl md:ml-2.5 font-semibold"
           >
             Contact Us
