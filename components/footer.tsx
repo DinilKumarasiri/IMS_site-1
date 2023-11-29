@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { PiDotOutlineFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -79,12 +80,24 @@ const Footer = () => {
         <p className="text-sm text-gray-500">
           &copy; 2024 IMS Systems. All rights reserved.
         </p>
-        <Link
-          href="https://shanukapeiris.netlify.app/"
-          className="text-sm text-gray-500 hover:underline"
-        >
-          Design & Dev
-        </Link>
+        <div className="flex gap-1 items-center justify-center text-sm text-gray-500">
+          <span>
+            Powered by
+            <Link
+              href="https://www.alenesoft.com/"
+              className="ml-1 hover:underline"
+            >
+              AleneSoft PVT LTD
+            </Link>
+          </span>
+          <PiDotOutlineFill />
+          <Link
+            href="https://shanukapeiris.netlify.app/"
+            className="hover:underline"
+          >
+            Design & Dev
+          </Link>
+        </div>
       </div>
     </footer>
   );
