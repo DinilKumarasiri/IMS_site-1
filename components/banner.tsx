@@ -1,6 +1,8 @@
 "use client";
 
+import { fjalla } from "@/app/font";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const Bannner = () => {
@@ -14,9 +16,9 @@ const Bannner = () => {
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className="z-10 text-4xl md:text-5xl lg:text-7xl font-medium mt-[3rem] md:mt-[7rem] text-white xl:mt-30"
+          className={`${fjalla.className} z-10 text-4xl md:text-5xl lg:text-7xl mt-[3rem] md:mt-[7rem] text-white xl:mt-30`}
         >
-          Innovative Solutions, Seamless <br className="hidden lg:block" />{" "}
+          Innovative Solutions, Seamless <br className="hidden lg:block" />
           Integration
         </motion.h1>
         <motion.h3
