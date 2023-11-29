@@ -1,12 +1,24 @@
-export default {
-  name: "pet",
+import { defineField, defineType } from "sanity";
+
+export default defineType({
+  name: "product",
   type: "document",
-  title: "Pet",
+  title: "product",
   fields: [
-    {
-      name: "name",
+    defineField({
+      name: "title",
+      title: "Title",
       type: "string",
-      title: "Name",
-    },
+    }),
+    defineField({
+      name: "description",
+      title: "Description",
+      type: "string",
+    }),
+    defineField({
+      name: "image",
+      title: "Title",
+      type: "image",
+    }),
   ],
-};
+});
