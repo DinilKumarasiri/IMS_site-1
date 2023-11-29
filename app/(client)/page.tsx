@@ -1,6 +1,5 @@
 import About from "@/components/about";
 import Bannner from "@/components/banner";
-import Footer from "@/components/footer";
 import Partner from "@/components/partner";
 import Product from "@/components/product";
 import Service from "@/components/service";
@@ -15,7 +14,6 @@ const Home = () => {
       <hr className="w-[80%] h-1 mx-auto" />
       <Product />
       <Partner />
-      <Footer />
     </main>
   );
 };
