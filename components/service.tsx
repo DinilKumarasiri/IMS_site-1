@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Card from "./card";
+import { fjalla } from "@/app/font";
+import { LuArrowRight } from "react-icons/lu";
 
 type CardProps = {
   title: string;
@@ -13,7 +15,7 @@ type CardProps = {
   image: SanityImageSource;
 };
 
-async function getProducts() {
+async function getServices() {
   const query = `*[_type == 'service'][0...3]`;
 
   const data = await client.fetch(query);
@@ -25,7 +27,7 @@ const Service = () => {
   const [data, setData] = useState<CardProps[] | null>();
 
   useEffect(() => {
-    getProducts().then((data) => setData(data));
+    getServices().then((data) => setData(data));
   }, []);
 
   return (
@@ -33,7 +35,9 @@ const Service = () => {
       className="py-10 px-10 md:px-40 flex flex-col items-center justify-center gap-10 scroll-mt-20"
       id="service"
     >
-      <h2 className="text-3xl md:text-5xl font-semibold text-[#95A5A6]">
+      <h2
+        className={`${fjalla.className} text-3xl md:text-5xl font-semibold text-[#95A5A6]`}
+      >
         Our Services
       </h2>
       {data?.length ? (
@@ -46,14 +50,14 @@ const Service = () => {
           <Link href="/services">More Services</Link>
         </div>
       ) : (
-        <p className="text-sm text-gray-500">- No Services Content -</p>
+        <p className="text-sm text-gray-500">- No Services by IMS -</p>
       )}
       {data?.length ? (
         <Link
           href="/services"
-          className="bg-[#739af4] text-white px-6 py-3 rounded-2xl font-normal hover:opacity-95"
+          className="absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
         >
-          More Services
+          <LuArrowRight />
         </Link>
       ) : null}
     </section>
