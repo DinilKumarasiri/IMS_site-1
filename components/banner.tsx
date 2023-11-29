@@ -5,7 +5,10 @@ import Link from "next/link";
 
 const Bannner = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden items-start justify-start ">
+    <section
+      className="relative h-screen w-full overflow-hidden items-start justify-start scroll-mt-28"
+      id="banner"
+    >
       <div className="z-1 absolute w-screen h-screen bg-[url('/background.jpg')] bg-cover bg-center grayscale brightness-50 opacity-85 md:brightness-75 md:opacity-75"></div>
       <div className="z-10 px-10 py-16 md:py-0 flex flex-col gap-5">
         <motion.h1
@@ -35,13 +38,13 @@ const Bannner = () => {
           className="z-10 w-[10rem] md:w-auto flex flex-col gap-2 md:flex-row"
         >
           <Link
-            href="/#"
+            href="#about"
             className="z-10 bg-[#F39C12] text-white font-semibold px-[2rem] py-[0.6rem] rounded-xl"
           >
             Learn More
           </Link>
           <Link
-            href="/mailto:support@imsaasia.com"
+            href="mailto:support@imsaasia.com"
             className="z-10 bg-white px-[2rem] py-[0.6rem]  rounded-xl md:ml-2.5 font-semibold"
           >
             Contact Us

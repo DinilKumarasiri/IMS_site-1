@@ -47,14 +47,8 @@ const Header = () => {
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 key={index}
-                className="group"
               >
-                <Link
-                  href={item.href}
-                  className="group-last:border-2 group-last:border-[#F39C12] group-last:px-3 group-last:py-2 group-last:rounded-xl group-last:hover:bg-[#F39C12] group-last:hover:text-white transition"
-                >
-                  {item.name}
-                </Link>
+                <Link href={item.href}>{item.name}</Link>
               </motion.li>
             ))}
           </ul>

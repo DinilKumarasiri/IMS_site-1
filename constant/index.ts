@@ -1,8 +1,8 @@
 export const navLinks = [
-  { name: "About Us", href: "/about Us" },
-  { name: "Services", href: "/services" },
-  { name: "Products", href: "/products" },
-  { name: "Contact Us", href: "/Contact" },
+  { name: "About Us", href: "#about" },
+  { name: "Services", href: "#service" },
+  { name: "Products", href: "#product" },
+  { name: "Partners", href: "#partner" },
 ];
 
 export const partnerImages = [

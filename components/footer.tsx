@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-3 bg-white text-black">
+    <footer className="flex flex-col gap-3 bg-white text-black" id="footer">
       <div className="flex flex-col md:flex-row items-center justify-around pb-10 pt-10 md:px-[15rem] gap-[2.5rem] md:gap-[5rem]">
         <div className="flex flex-col justify-center items-center gap-2">
           <Link
@@ -26,18 +26,23 @@ const Footer = () => {
           <h4 className="uppercase font-medium">Company</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
-              <Link href="/about" className="hover:underline">
-                About
+              <Link href="#about" className="hover:underline">
+                About Us
               </Link>
             </li>
             <li>
-              <Link href="/service" className="hover:underline">
-                Service
+              <Link href="#service" className="hover:underline">
+                Services
               </Link>
             </li>
             <li>
-              <Link href="/product" className="hover:underline">
+              <Link href="#product" className="hover:underline">
                 products
+              </Link>
+            </li>
+            <li>
+              <Link href="#partner" className="hover:underline">
+                Partners
               </Link>
             </li>
           </ul>
