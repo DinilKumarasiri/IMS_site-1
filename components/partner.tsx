@@ -1,3 +1,4 @@
+import { fjalla } from "@/app/font";
 import { partnerImages } from "@/constant";
 import Image from "next/image";
 import React from "react";
@@ -14,7 +15,9 @@ const Partner = () => {
       className="py-10 px-10 md:px-40 flex flex-col items-center justify-center gap-10 bg-gray-100 scroll-mt-20"
       id="partner"
     >
-      <h2 className="text-3xl md:text-5xl font-semibold text-[#95A5A6]">
+      <h2
+        className={`${fjalla.className} text-3xl md:text-5xl font-semibold text-[#95A5A6]`}
+      >
         Our Partners
       </h2>
       <div className="overflow-hidden h-[92px] w-full relative">
