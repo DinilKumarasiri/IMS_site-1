@@ -1,9 +1,8 @@
 import { fjalla } from "@/app/font";
-import Card from "@/components/card";
 import CardList from "@/components/card-list";
 import { client } from "@/lib/sanity.client";
 import { groq } from "next-sanity";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const query = groq`*[_type == 'service']`;
 

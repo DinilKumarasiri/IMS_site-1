@@ -1,9 +1,4 @@
-import { Fjalla_One, Karla, Poppins } from "next/font/google";
-
-export const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import { Fjalla_One, Karla } from "next/font/google";
 
 export const fjalla = Fjalla_One({
   subsets: ["latin"],
