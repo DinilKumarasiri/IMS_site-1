@@ -24,3 +24,21 @@
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+
+.bg-gradient {
+  background: linear-gradient(transparent, #7c72ff 30%);
+}
+
+.animateScale {
+  transform-origin: left center;
+  animation: anim infinite 1000ms ease;
+}
+
+@keyframes anim {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

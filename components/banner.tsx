@@ -4,6 +4,7 @@ import { fjalla } from "@/app/font";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Animation from "./animation";
 
 const Bannner = () => {
   return (
@@ -52,6 +53,7 @@ const Bannner = () => {
             Contact Us
           </Link>
         </motion.div>
+        <Animation />
       </div>
     </section>
   );
