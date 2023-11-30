@@ -13,7 +13,7 @@ const Products = async () => {
     <main className="flex flex-col">
       <section className="h-full w-full flex flex-col items-center justify-center gap-10">
         <h1
-          className={`${fjalla.className} text-4xl md:text-5xl lg:text-7xl mt-[3rem] md:mt-[7rem] text-black xl:mt-30`}
+          className={`${fjalla.className} text-4xl md:text-5xl lg:text-7xl mt-[3rem] md:mt-[7rem] text-black xl:mt-30 dark:text-white`}
         >
           All Products
         </h1>

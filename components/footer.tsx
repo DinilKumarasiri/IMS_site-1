@@ -5,7 +5,10 @@ import { PiDotOutlineFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-3 bg-white text-black" id="footer">
+    <footer
+      className="flex flex-col gap-3 bg-white text-black dark:bg-gray-900 dark:text-white"
+      id="footer"
+    >
       <div className="flex flex-col md:flex-row items-center justify-around pb-10 pt-10 md:px-[15rem] gap-[2.5rem] md:gap-[5rem]">
         <div className="flex flex-col justify-center items-center gap-2">
           <Link

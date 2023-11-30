@@ -12,7 +12,7 @@ const Partner = () => {
 
   return (
     <section
-      className="py-10 px-10 md:px-40 flex flex-col items-center justify-center gap-10 bg-gray-100 scroll-mt-20"
+      className="py-10 px-10 md:px-40 flex flex-col items-center justify-center gap-10 bg-gray-100 scroll-mt-20 dark:bg-gray-700"
       id="partner"
     >
       <h2

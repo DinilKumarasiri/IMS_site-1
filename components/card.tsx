@@ -25,7 +25,7 @@ const Card = ({ title, description, image }: CardProps) => {
         {title}
       </h4>
       <div className=" flex-1 mt-5 px-4 flex flex-col items-start justify-start gap-4 bg-transparent">
-        <p className="line-clamp-5 text-xs font-medium text-[#1f1f1f] text-justify">
+        <p className="line-clamp-5 text-xs font-medium text-[#1f1f1f] text-justify dark:text-white">
           {description}
         </p>
       </div>

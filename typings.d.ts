@@ -13,3 +13,5 @@ interface List extends Base {
   description: string;
   image: SanityImageSource;
 }
+
+type Theme = "light" | "dark";

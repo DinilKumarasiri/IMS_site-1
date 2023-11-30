@@ -3,6 +3,8 @@ import "../globals.css";
 import Header from "@/components/header";
 import { karla } from "../font";
 import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://imsaasia.com/"),
@@ -32,10 +34,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${karla.className}`}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${karla.className} dark:bg-gray-900`}>
+        <ThemeContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   );
