@@ -39,13 +39,12 @@ const Bannner = () => {
           }}
           className="z-10 w-[10rem] md:w-auto flex flex-col gap-2 md:flex-row"
         >
-          <Link
+          <a
             href="#about"
             className="z-10 bg-[#F39C12] text-white font-semibold px-[2rem] py-[0.6rem] rounded-xl"
-            shallow={true}
           >
             Learn More
-          </Link>
+          </a>
           <Link
             href="mailto:support@imsaasia.com"
             className="z-10 bg-white px-[2rem] py-[0.6rem]  rounded-xl md:ml-2.5 font-semibold"

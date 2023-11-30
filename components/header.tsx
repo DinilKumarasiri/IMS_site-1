@@ -49,9 +49,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 key={index}
               >
-                <Link href={item.href} shallow={true}>
-                  {item.name}
-                </Link>
+                <a href={item.href}>{item.name}</a>
               </motion.li>
             ))}
           </ul>
