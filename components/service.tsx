@@ -21,14 +21,23 @@ const Service = async () => {
         Our Services
       </h2>
       <CardList products={services} text="Services" />
-      {/* {services?.length ? ( */}
-      <Link
-        href="/services"
-        className="absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
-      >
-        <LuArrowRight />
-      </Link>
-      {/* ) : null} */}
+      {services?.length ? (
+        <Link
+          href="/services"
+          className="hidden md:block absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
+        >
+          <LuArrowRight />
+        </Link>
+      ) : null}
+      {services?.length ? (
+        <Link
+          href="/services"
+          className="md:hidden flex items-center gap-2 right-16 hover:bg-gray-200 text-[#739af4] text-xl px-3 py-3 rounded-full hover:opacity-95 transition"
+        >
+          <span>View full Services</span>
+          <LuArrowRight />
+        </Link>
+      ) : null}
     </section>
   );
 };
