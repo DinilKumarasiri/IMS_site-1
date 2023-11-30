@@ -27,8 +27,9 @@ const Partner = () => {
               <Image
                 src={item.imgUrl}
                 alt={item.alt}
-                width={130}
-                height={130}
+                width={100}
+                height={100}
+                className="w-auto h-auto object-contain"
               />
             </React.Fragment>
           ))}

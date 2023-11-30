@@ -1,31 +1,14 @@
-"use client";
-
 import { fjalla } from "@/app/font";
 import Card from "@/components/card";
+import CardList from "@/components/card-list";
 import { client } from "@/lib/sanity.client";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { groq } from "next-sanity";
 import React, { useEffect, useState } from "react";
 
-type CardProps = {
-  title: string;
-  description: string;
-  image: SanityImageSource;
-};
+const query = groq`*[_type == 'service']`;
 
-async function getServices() {
-  const query = `*[_type == 'service']`;
-
-  const data = await client.fetch(query);
-
-  return data;
-}
-
-const Services = () => {
-  const [data, setData] = useState<CardProps[] | null>();
-
-  useEffect(() => {
-    getServices().then((data) => setData(data));
-  }, []);
+const Services = async () => {
+  const services = await client.fetch(query);
 
   return (
     <main className="flex flex-col">
@@ -35,17 +18,7 @@ const Services = () => {
         >
           All Services
         </h1>
-        {data?.length ? (
-          <div className="mx-auto grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
-            {data?.map((item, index) => (
-              <React.Fragment key={index}>
-                <Card {...item} />
-              </React.Fragment>
-            ))}
-          </div>
-        ) : (
-          <p className="text-sm text-gray-500">- No Products by IMS -</p>
-        )}
+        <CardList products={services} text="Services" />
       </section>
     </main>
   );

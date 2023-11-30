@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --rotation-plane-1: 150deg;
+  --rotation-plane-2: 90deg;
+  --rotation-plane-3: 20deg;
+
+  --rotation-measuring-1: -2deg;
+  --rotation-measuring-2: 30deg;
+
+  --rotation-angle2: 37deg;
+}
+
 .banner-gradient {
   background: linear-gradient(
     0deg,
@@ -29,16 +40,73 @@
   background: linear-gradient(transparent, #7c72ff 30%);
 }
 
-.animateScale {
-  transform-origin: left center;
-  animation: anim infinite 1000ms ease;
+.plane-anim-1 {
+  transform-origin: 0;
+  animation: planeanim1 1000ms infinite;
 }
 
-@keyframes anim {
+.plane-anim-2 {
+  transform-origin: 0;
+  animation: planeanim2 1000ms infinite;
+}
+
+.plane-anim-3 {
+  transform-origin: 0;
+  animation: planeanim3 1000ms infinite;
+}
+
+@keyframes planeanim1 {
   0% {
-    transform: scaleX(0);
+    transform: rotate(var(--rotation-plane-1)) scaleX(0);
   }
   100% {
-    transform: scaleX(1);
+    transform: rotate(var(--rotation-plane-1)) scaleX(1);
+  }
+}
+
+@keyframes planeanim2 {
+  0% {
+    transform: rotate(var(--rotation-plane-2)) scaleX(0);
+  }
+  100% {
+    transform: rotate(var(--rotation-plane-2)) scaleX(1);
+  }
+}
+
+@keyframes planeanim3 {
+  0% {
+    transform: rotate(var(--rotation-plane-3)) scaleX(0);
+  }
+  100% {
+    transform: rotate(var(--rotation-plane-3)) scaleX(1);
+  }
+}
+
+.measuring-anim-1 {
+  transform-origin: 0;
+  animation: measuring1 1000ms infinite;
+  animation-delay: 2s;
+}
+.measuring-anim-2 {
+  transform-origin: 0;
+  animation: measuring2 1000ms infinite;
+  animation-delay: 2s;
+}
+
+@keyframes measuring1 {
+  0% {
+    transform: rotate(var(--rotation-measuring-1)) scaleX(0);
+  }
+  100% {
+    transform: rotate(var(--rotation-measuring-1)) scaleX(1);
+  }
+}
+
+@keyframes measuring2 {
+  0% {
+    transform: rotate(var(--rotation-measuring-2)) scaleX(0);
+  }
+  100% {
+    transform: rotate(var(--rotation-measuring-2)) scaleX(1);
   }
 }

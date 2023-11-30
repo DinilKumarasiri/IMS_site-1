@@ -1,33 +1,14 @@
-"use client";
-
 import { client } from "@/lib/sanity.client";
-import React, { useEffect, useState } from "react";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import Link from "next/link";
-import Card from "./card";
 import { fjalla } from "@/app/font";
+import { groq } from "next-sanity";
+import CardList from "./card-list";
+import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
 
-type CardProps = {
-  title: string;
-  description: string;
-  image: SanityImageSource;
-};
+const query = groq`*[_type == 'product'][0...3]`;
 
-async function getProducts() {
-  const query = `*[_type == 'product'][0...3]`;
-
-  const data = await client.fetch(query);
-
-  return data;
-}
-
-const Product = () => {
-  const [data, setData] = useState<CardProps[] | null>();
-
-  useEffect(() => {
-    getProducts().then((data) => setData(data));
-  }, []);
+const Product = async () => {
+  const products = await client.fetch(query);
 
   return (
     <section
@@ -39,18 +20,8 @@ const Product = () => {
       >
         Our Products
       </h2>
-      {data?.length ? (
-        <div className="mx-auto grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
-          {data?.map((item, index) => (
-            <React.Fragment key={index}>
-              <Card {...item} />
-            </React.Fragment>
-          ))}
-        </div>
-      ) : (
-        <p className="text-sm text-gray-500">- No Products by IMS -</p>
-      )}
-      {data?.length ? (
+      <CardList products={products} text={"Products"} />
+      {products?.length ? (
         <Link
           href="/products"
           className="absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
