@@ -28,24 +28,24 @@ const Footer = () => {
           <h4 className="uppercase font-medium">Company</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
-              <Link href="#about" className="hover:underline" shallow={true}>
+              <a href="#about" className="hover:underline">
                 About Us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#service" className="hover:underline" shallow={true}>
+              <a href="#service" className="hover:underline">
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#product" className="hover:underline" shallow={true}>
+              <a href="#product" className="hover:underline">
                 products
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#partner" className="hover:underline" shallow={true}>
+              <a href="#partner" className="hover:underline">
                 Partners
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
