@@ -13,11 +13,11 @@ const Bannner = () => {
       id="banner"
     >
       <div className="z-1 absolute w-screen h-screen bg-[url('/background.jpg')] bg-cover bg-center grayscale brightness-50 opacity-85 md:brightness-75 md:opacity-75"></div>
-      <div className="z-10 px-10 py-16 md:py-0 flex flex-col gap-5">
+      <div className="z-10 h-screen md:h-auto px-10 py-16 md:py-0 flex flex-col items-center justify-center gap-5 text-center md:text-left md:items-start md:justify-normal">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`${fjalla.className} z-10 text-4xl md:text-5xl lg:text-7xl mt-[3rem] md:mt-[7rem] text-white xl:mt-30`}
+          className={`${fjalla.className} z-10 text-5xl lg:text-7xl mt-[3rem] md:mt-[7rem] text-white xl:mt-30`}
         >
           Innovative Solutions, Seamless <br className="hidden lg:block" />
           Integration
@@ -28,7 +28,7 @@ const Bannner = () => {
           transition={{
             delay: 0.1,
           }}
-          className="z-10 text-left text-base text-md md:text-xl text-white"
+          className="z-10 text-lg text-md md:text-xl text-white"
         >
           Driving Excellence in Test Measurement and Industry 4.0 Applications
         </motion.h3>

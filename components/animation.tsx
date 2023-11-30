@@ -89,7 +89,7 @@ const Animation = () => {
 
         <div className="z-10 absolute top-[15%] right-[10%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
-            src="/phone-vibration.png"
+            src="/motion-sensor.png"
             alt="Measuring"
             width={50}
             height={50}
