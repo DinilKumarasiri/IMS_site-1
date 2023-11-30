@@ -8,7 +8,6 @@ type Props = {
 };
 
 const CardList = ({ products, text }: Props) => {
-  console.log(text);
   return (
     <>
       {products?.length ? (
