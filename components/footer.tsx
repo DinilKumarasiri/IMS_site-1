@@ -11,6 +11,7 @@ const Footer = () => {
           <Link
             href="/"
             className="font-semibold  text-xl text-[#3498DB] flex items-center"
+            shallow={true}
           >
             <Image
               src="/logo.png"
@@ -27,22 +28,22 @@ const Footer = () => {
           <h4 className="uppercase font-medium">Company</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
-              <Link href="#about" className="hover:underline">
+              <Link href="#about" className="hover:underline" shallow={true}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="#service" className="hover:underline">
+              <Link href="#service" className="hover:underline" shallow={true}>
                 Services
               </Link>
             </li>
             <li>
-              <Link href="#product" className="hover:underline">
+              <Link href="#product" className="hover:underline" shallow={true}>
                 products
               </Link>
             </li>
             <li>
-              <Link href="#partner" className="hover:underline">
+              <Link href="#partner" className="hover:underline" shallow={true}>
                 Partners
               </Link>
             </li>

@@ -42,6 +42,7 @@ const Bannner = () => {
           <Link
             href="#about"
             className="z-10 bg-[#F39C12] text-white font-semibold px-[2rem] py-[0.6rem] rounded-xl"
+            shallow={true}
           >
             Learn More
           </Link>

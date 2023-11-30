@@ -30,6 +30,7 @@ const Header = () => {
         <Link
           href="/"
           className="font-semibold tracking-[0.2rem] text-3xl text-[#3498DB] flex items-center"
+          shallow={true}
         >
           <Image
             src="/logo.png"
@@ -48,7 +49,9 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 key={index}
               >
-                <Link href={item.href}>{item.name}</Link>
+                <Link href={item.href} shallow={true}>
+                  {item.name}
+                </Link>
               </motion.li>
             ))}
           </ul>
