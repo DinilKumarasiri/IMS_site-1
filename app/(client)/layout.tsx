@@ -5,6 +5,7 @@ import { karla } from "../font";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import WhatsappBtn from "@/components/whatsapp-btn";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://imsaasia.com/"),
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <WhatsappBtn />
           <ThemeSwitch />
         </ThemeContextProvider>
       </body>
