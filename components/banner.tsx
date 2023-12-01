@@ -42,12 +42,14 @@ const Bannner = () => {
           <a
             href="#about"
             className="z-10 bg-[#F39C12] text-white font-semibold px-[2rem] py-[0.6rem] rounded-xl"
+            aria-label="Learn more about the services and products"
           >
             Learn More
           </a>
           <Link
             href="mailto:support@imsaasia.com"
             className="z-10 bg-white px-[2rem] py-[0.6rem]  rounded-xl md:ml-2.5 font-semibold"
+            aria-label="Contact service and products providers"
           >
             Contact Us
           </Link>

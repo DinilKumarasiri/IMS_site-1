@@ -30,7 +30,7 @@ const Header = () => {
         <Link
           href="/"
           className="font-semibold tracking-[0.2rem] text-3xl text-[#3498DB] flex items-center"
-          shallow={true}
+          aria-label="Go back to the home screen"
         >
           <Image
             src="/logo.png"
@@ -49,7 +49,9 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 key={index}
               >
-                <a href={item.href}>{item.name}</a>
+                <a href={item.href} aria-label={item.ariaLabel}>
+                  {item.name}
+                </a>
               </motion.li>
             ))}
           </ul>
@@ -79,9 +81,9 @@ export const SideMenu = () => {
           key={index}
           className="w-full hover:bg-gray-600/10  py-1 rounded-md"
         >
-          <Link href={item.href} className="ml-[5px]">
+          <a href={item.href} className="ml-[5px]" aria-label={item.ariaLabel}>
             {item.name}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

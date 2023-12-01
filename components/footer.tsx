@@ -14,7 +14,7 @@ const Footer = () => {
           <Link
             href="/"
             className="font-semibold  text-xl text-[#3498DB] flex items-center"
-            shallow={true}
+            aria-label="Go back to the home screen"
           >
             <Image
               src="/logo.png"
@@ -31,22 +31,38 @@ const Footer = () => {
           <h4 className="uppercase font-medium">Company</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
-              <a href="/#about" className="hover:underline">
+              <a
+                href="/#about"
+                className="hover:underline"
+                aria-label="View more details about the company"
+              >
                 About Us
               </a>
             </li>
             <li>
-              <a href="/#service" className="hover:underline">
+              <a
+                href="/#service"
+                className="hover:underline"
+                aria-label="View a glimps of what services the company provides"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="/#product" className="hover:underline">
+              <a
+                href="/#product"
+                className="hover:underline"
+                aria-label="View a glimps of what products the company provides"
+              >
                 products
               </a>
             </li>
             <li>
-              <a href="/#partner" className="hover:underline">
+              <a
+                href="/#partner"
+                className="hover:underline"
+                aria-label="View the partners that the company collaborates with"
+              >
                 Partners
               </a>
             </li>
@@ -56,7 +72,11 @@ const Footer = () => {
           <h4 className="uppercase font-medium">Contact</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
-              <Link href="tel:+6593398013" className="hover:underline">
+              <Link
+                href="tel:+6593398013"
+                className="hover:underline"
+                aria-label="Contact product and service provider"
+              >
                 Contact via Telephone
               </Link>
             </li>
@@ -64,6 +84,7 @@ const Footer = () => {
               <Link
                 href="mailto:support@imsaasia.com"
                 className="hover:underline"
+                aria-label="Email product and service provider"
               >
                 Contact via Email
               </Link>
@@ -90,6 +111,7 @@ const Footer = () => {
             <Link
               href="https://www.alenesoft.com/"
               className="ml-1 hover:underline"
+              aria-label="Visit company portfolio of the websites developer and designer"
             >
               AleneSoft PVT LTD
             </Link>
@@ -98,6 +120,7 @@ const Footer = () => {
           <Link
             href="https://shanukapeiris.netlify.app/"
             className="hover:underline"
+            aria-label="Visit portfolio of the websites designer and developer"
           >
             Design & Dev
           </Link>

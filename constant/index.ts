@@ -1,8 +1,24 @@
 export const navLinks = [
-  { name: "About Us", href: "/#about" },
-  { name: "Services", href: "/#service" },
-  { name: "Products", href: "/#product" },
-  { name: "Partners", href: "/#partner" },
+  {
+    name: "About Us",
+    href: "/#about",
+    ariaLabel: "View more details about the company",
+  },
+  {
+    name: "Services",
+    href: "/#service",
+    ariaLabel: "View a glimps of what services the company provides",
+  },
+  {
+    name: "Products",
+    href: "/#product",
+    ariaLabel: "View a glimps of what products the company provides",
+  },
+  {
+    name: "Partners",
+    href: "/#partner",
+    ariaLabel: "View the partners that the company collaborates with",
+  },
 ];
 
 export const partnerImages = [

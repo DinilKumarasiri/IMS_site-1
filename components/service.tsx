@@ -25,6 +25,7 @@ const Service = async () => {
         <Link
           href="/services"
           className="hidden md:block absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
+          aria-label="View all of the services the company provides"
         >
           <LuArrowRight />
         </Link>
@@ -33,6 +34,7 @@ const Service = async () => {
         <Link
           href="/services"
           className="md:hidden flex items-center gap-2 right-16 hover:bg-gray-200 text-[#739af4] text-xl px-3 py-3 rounded-full hover:opacity-95 transition"
+          aria-label="View all of the services the company provides"
         >
           <span>View full Services</span>
           <LuArrowRight />
