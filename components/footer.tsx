@@ -54,7 +54,7 @@ const Footer = () => {
                 className="hover:underline"
                 aria-label="View a glimps of what products the company provides"
               >
-                products
+                Products
               </a>
             </li>
             <li>
