@@ -19,8 +19,8 @@ const ItemCommon = ({ title, content, url, image }: Common) => {
   return (
     <div className="flex flex-row items-center justify-center px-10 gap-[10rem]">
       <div className="w-1/2 flex flex-col gap-10">
-        <h1 className="text-5xl font-semibold">{title}</h1>
-        <div className="text-sm">
+        <h1 className="text-5xl font-semibold dark:text-white">{title}</h1>
+        <div className="text-sm dark:text-white">
           <PortableText
             value={content}
             components={myPortableTextComponents}
