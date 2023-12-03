@@ -1,4 +1,4 @@
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { PortableTextBlock } from "sanity";
 
 type Base = {
   _createdAt: string;
@@ -8,10 +8,17 @@ type Base = {
   _updatedAt: string;
 };
 
-interface List extends Base {
+interface Common extends Base {
   title: string;
-  description: string;
-  image: SanityImageSource;
+  summary: string;
+  slug: string;
+  url: string;
+  image: string;
+  content: PortableTextBlock[];
 }
+
+interface Product extends Common {}
+
+interface Service extends Common {}
 
 type Theme = "light" | "dark";
