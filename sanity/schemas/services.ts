@@ -16,6 +16,7 @@ export default defineType({
       name: "summary",
       title: "Summary",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       title: "Slug",
@@ -42,12 +43,24 @@ export default defineType({
       name: "image",
       title: "Image",
       type: "image",
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string",
+        },
+      ],
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "content",
       title: "Content",
       type: "array",
       of: [{ type: "block" }],
+      validation: (Rule) => Rule.required(),
     }),
   ],
 });

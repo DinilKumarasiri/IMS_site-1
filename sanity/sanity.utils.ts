@@ -37,7 +37,7 @@ export const getProduct = async (slug: string): Promise<Product> => {
 
 export const getService = async (slug: string): Promise<Service> => {
   return client.fetch(
-    groq`*[_type == "services" && slug.current == slug][0]{
+    groq`*[_type == "services" && slug.current == $slug][0]{
     _id,
     title,
     url,

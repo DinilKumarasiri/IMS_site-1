@@ -1,3 +1,4 @@
+import ItemCommon from "@/components/item-common";
 import { getProduct } from "@/sanity/sanity.utils";
 import React from "react";
 
@@ -12,8 +13,8 @@ const Product = async ({ params }: ProductProps) => {
 
   return (
     <main className="flex flex-col">
-      <section className="h-screen w-full flex flex-col items-center justify-center gap-10">
-        <h1 className="text-7xl">{item.title}</h1>
+      <section className="h-screen w-full flex items-center justify-center scroll-mt-28">
+        <ItemCommon {...item} />
       </section>
     </main>
   );
