@@ -7,7 +7,7 @@ const Service = async () => {
 
   return (
     <section
-      className="py-10 px-10 md:px-40 flex flex-col items-center justify-center gap-10 scroll-mt-20"
+      className="py-10 px-10 md:px-16 flex flex-col items-center justify-center gap-10 scroll-mt-20"
       id="service"
     >
       <h2

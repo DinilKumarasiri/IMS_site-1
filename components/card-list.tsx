@@ -11,7 +11,7 @@ const CardList = ({ items, text }: Props) => {
   return (
     <>
       {items?.length ? (
-        <div className="mx-auto grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-4 md:grid-rows-1">
+        <div className="mx-auto grid gap-20 grid-cols-1 grid-rows-3 md:grid-cols-4 md:grid-rows-1">
           {items?.map((item) => (
             <React.Fragment key={item._id}>
               <a href={`${text}/${item.slug}`}>
