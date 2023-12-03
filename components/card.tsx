@@ -1,8 +1,8 @@
-import { List } from "@/typings";
+import { Common } from "@/typings";
 import Image from "next/image";
 import React from "react";
 
-const Card = ({ title, summary, image }: List) => {
+const Card = ({ title, summary, image }: Common) => {
   return (
     <div className="w-[20rem] h-[30rem] custom-shadow rounded-2xl flex flex-col gap-5 items-center justify-between py-5 bg-[#355fc18f] hover:scale-105 transition">
       <div className="w-[90%] h-[15rem] px-1 bg-white rounded-tl-2xl rounded-br-2xl mx-auto">
