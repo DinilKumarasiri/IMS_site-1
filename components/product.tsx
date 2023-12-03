@@ -1,14 +1,9 @@
-import { client } from "@/lib/sanity.client";
 import { fjalla } from "@/app/font";
-import { groq } from "next-sanity";
 import CardList from "./card-list";
-import Link from "next/link";
-import { LuArrowRight } from "react-icons/lu";
-
-const query = groq`*[_type == 'product'][0...3]`;
+import { getProducts } from "@/sanity/sanity.utils";
 
 const Product = async () => {
-  const products = await client.fetch(query);
+  const products = await getProducts();
 
   return (
     <section
@@ -20,26 +15,7 @@ const Product = async () => {
       >
         Our Products
       </h2>
-      <CardList products={products} text={"Products"} />
-      {products?.length ? (
-        <Link
-          href="/products"
-          className="hidden md:block absolute right-16 hover:bg-gray-200 text-[#739af4] text-3xl px-6 py-6 rounded-full hover:opacity-95 transition"
-          aria-label="View all of the products the company provides"
-        >
-          <LuArrowRight />
-        </Link>
-      ) : null}
-      {products?.length ? (
-        <Link
-          href="/products"
-          className="md:hidden flex items-center gap-2 right-16 hover:bg-gray-200 text-[#739af4] text-xl px-3 py-3 rounded-full hover:opacity-95 transition"
-          aria-label="View all of the products the company provides"
-        >
-          <span>View full Products</span>
-          <LuArrowRight />
-        </Link>
-      ) : null}
+      <CardList items={products} text={"product"} />
     </section>
   );
 };

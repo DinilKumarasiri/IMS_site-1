@@ -1,20 +1,22 @@
-import { List } from "@/typings";
 import React from "react";
 import Card from "./card";
+import { Common, Product } from "@/typings";
 
 type Props = {
-  products: List[];
+  items: Common[];
   text: string;
 };
 
-const CardList = ({ products, text }: Props) => {
+const CardList = ({ items, text }: Props) => {
   return (
     <>
-      {products?.length ? (
+      {items?.length ? (
         <div className="mx-auto grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
-          {products?.map((item, index) => (
-            <React.Fragment key={index}>
-              <Card {...item} />
+          {items?.map((item) => (
+            <React.Fragment key={item._id}>
+              <a href={`${text}/${item.slug}`}>
+                <Card {...item} />
+              </a>
             </React.Fragment>
           ))}
         </div>
