@@ -17,10 +17,12 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
 
 const ItemCommon = ({ title, content, url, image }: Common) => {
   return (
-    <div className="flex flex-row items-center justify-center px-10 gap-[10rem]">
-      <div className="w-1/2 flex flex-col gap-10">
-        <h1 className="text-5xl font-semibold dark:text-white">{title}</h1>
-        <div className="text-sm dark:text-white">
+    <div className="flex flex-col md:flex-row items-center justify-center px-5 pt-5 md:px-10 gap-10 md:gap-[10rem]">
+      <div className="md:w-1/2 px-10 flex flex-col items-center justify-center md:items-start gap-5 md:gap-10">
+        <h1 className="text-3xl md:text-4xl font-semibold dark:text-white">
+          {title}
+        </h1>
+        <div className="text-sm text-justify dark:text-white">
           <PortableText
             value={content}
             components={myPortableTextComponents}
@@ -30,21 +32,23 @@ const ItemCommon = ({ title, content, url, image }: Common) => {
           <Link
             href={url}
             target="_black"
-            className="bg-blue-400 w-fit px-8 py-3 rounded-full text-white font-semibold opacity-80 hover:opacity-100"
+            className="bg-blue-400 w-fit px-5 py-2 md:px-8 md:py-3 rounded-full text-white font-semibold opacity-80 hover:opacity-100"
           >
             Learn More
           </Link>
         )}
       </div>
-      <Image
-        src={image}
-        alt={title}
-        width={400}
-        height={400}
-        priority
-        quality={98}
-        className="w-auto h-auto object-cover border-2 border-black rounded-xl"
-      />
+      <div className="border-2 border-black rounded-xl">
+        <Image
+          src={image}
+          alt={title}
+          width={400}
+          height={400}
+          priority
+          quality={98}
+          className="w-auto h-auto object-cover rounded-xl"
+        />
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Service = async ({ params }: ServiceProps) => {
 
   return (
     <main className="flex flex-col">
-      <section className="h-screen w-full flex items-center justify-center scroll-mt-28">
+      <section className="h-full w-full py-20 md:py-[12rem] flex items-center justify-center scroll-mt-28">
         <ItemCommon {...item} />
       </section>
     </main>
