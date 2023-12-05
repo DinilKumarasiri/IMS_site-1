@@ -113,8 +113,8 @@ const Animation = () => {
           <Image
             src="/monitoring.png"
             alt="Monitoring"
-            width={40}
-            height={40}
+            width={50}
+            height={50}
             className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
           />
           <span className="font-semibold text-white text-sm">Monitoring</span>
@@ -126,7 +126,7 @@ const Animation = () => {
             alt="Testing"
             width={50}
             height={50}
-            className="w-full h-full object-cover px-2 py-2 bg-gray-100 rounded-full"
+            className="w-full h-full object-contain px-2 py-2 bg-gray-100 rounded-full"
           />
           <span className="font-semibold text-white">Testing</span>
         </div>
