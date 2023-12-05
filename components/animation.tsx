@@ -10,7 +10,7 @@ const Animation = () => {
           className="z-10 absolute bottom-[20%] left-3 h-fit w-fit flex flex-col items-center justify-center"
         >
           <Image
-            src="/tape-measure.png"
+            src="/measuring.png"
             alt="Measuring"
             width={50}
             height={50}
@@ -55,7 +55,7 @@ const Animation = () => {
 
         <div className="z-10 group absolute bottom-[5%] left-[55%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
-            src="/high-speed-train.png"
+            src="/train.png"
             alt="Plane"
             width={50}
             height={50}
@@ -100,8 +100,8 @@ const Animation = () => {
 
         <div className="z-10 absolute top-[40%] right-[35%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
-            src="/search.png"
-            alt="Measuring"
+            src="/analyse.png"
+            alt="Analysing"
             width={50}
             height={50}
             className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
@@ -111,8 +111,8 @@ const Animation = () => {
 
         <div className="z-10 absolute bottom-[35%] right-[2%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
-            src="/quality-control.png"
-            alt="Measuring"
+            src="/monitoring.png"
+            alt="Monitoring"
             width={40}
             height={40}
             className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
@@ -120,13 +120,13 @@ const Animation = () => {
           <span className="font-semibold text-white text-sm">Monitoring</span>
         </div>
 
-        <div className="z-10 absolute bottom-[25%] left-[40%] h-fit w-fit flex flex-col items-center justify-center">
+        <div className="z-10 absolute px-2 py-2 bottom-[25%] left-[40%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
             src="/testing.png"
-            alt="Measuring"
+            alt="Testing"
             width={50}
             height={50}
-            className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
+            className="w-auto h-auto bg-contain bg-gray-100 !object-contain rounded-full"
           />
           <span className="font-semibold text-white">Testing</span>
         </div>
