@@ -120,13 +120,13 @@ const Animation = () => {
           <span className="font-semibold text-white text-sm">Monitoring</span>
         </div>
 
-        <div className="z-10 absolute px-2 py-2 bottom-[25%] left-[40%] h-fit w-fit flex flex-col items-center justify-center">
+        <div className="z-10 absolute bottom-[25%] left-[40%] h-fit w-fit flex flex-col items-center justify-center">
           <Image
             src="/testing.png"
             alt="Testing"
             width={50}
             height={50}
-            className="w-auto h-auto bg-contain bg-gray-100 !object-contain rounded-full"
+            className="w-full h-full object-cover px-2 py-2 bg-gray-100 rounded-full"
           />
           <span className="font-semibold text-white">Testing</span>
         </div>
