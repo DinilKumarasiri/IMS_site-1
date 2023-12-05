@@ -115,7 +115,7 @@ const Animation = () => {
             alt="Monitoring"
             width={50}
             height={50}
-            className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
+            className="w-auto h-auto bg-contain m-2 bg-gray-100 !object-contain rounded-full"
           />
           <span className="font-semibold text-white text-sm">Monitoring</span>
         </div>
