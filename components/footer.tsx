@@ -108,22 +108,10 @@ const Footer = () => {
         <div className="flex gap-1 items-center justify-center text-sm text-gray-500">
           <span>
             Powered by
-            <Link
-              href="https://www.alenesoft.com/"
-              className="ml-1 hover:underline"
-              aria-label="Visit company portfolio of the websites developer and designer"
-            >
-              AleneSoft PVT LTD
-            </Link>
+            
           </span>
           <PiDotOutlineFill />
-          <Link
-            href="https://shanukapeiris.netlify.app/"
-            className="hover:underline"
-            aria-label="Visit portfolio of the websites designer and developer"
-          >
-            Design & Dev
-          </Link>
+          
         </div>
       </div>
     </footer>
