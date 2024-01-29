@@ -14,7 +14,9 @@ const Animation = () => {
             alt="Measuring"
             width={50}
             height={50}
-            className="w-auto h-auto bg-gray-100 py-3 px-3 rounded-full"
+            className="opacity-50 w-auto h-auto bg-gray-100 py-3 px-3 rounded-full"
+            style={{ opacity: 0.5 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <span className="font-semibold text-white">Measuring</span>
         </div>
