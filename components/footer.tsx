@@ -17,10 +17,10 @@ const Footer = () => {
         aria-label="Go back to the home screen"
       >
         <Image
-          src="/logo1.png"
+          src="/logo3.png"
           alt="IMS Logo"
-          width={30}
-          height={30}
+          width={40}
+          height={40}
           className="object-cover mr-2"
         />
         IMS Systems
