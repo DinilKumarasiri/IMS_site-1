@@ -17,7 +17,7 @@ const Footer = () => {
         aria-label="Go back to the home screen"
       >
         <Image
-          src="/logo.png"
+          src="/logo1.png"
           alt="IMS Logo"
           width={30}
           height={30}
