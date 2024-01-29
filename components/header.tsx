@@ -35,11 +35,10 @@ const Header = () => {
           <Image
             src="/logo1.png"
             alt="IMS Logo"
-            width={35}
-            height={35}
+            width={100}
+            height={70}
             className="object-cover mr-2"
           />
-          IMS
         </Link>
         <div className="flex-1 flex items-center justify-end">
           <ul className="hidden md:flex items-center gap-3">
