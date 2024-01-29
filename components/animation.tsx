@@ -37,8 +37,6 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -bottom-[8rem] left-0 rounded-lg"
-            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
-
           />
           <span className="font-semibold text-white">Aviation</span>
 
@@ -60,7 +58,6 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
-            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
 
           />
           <span className="font-semibold text-white">Maritime</span>
@@ -82,7 +79,6 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
-            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
 
           />
           <span className="font-semibold text-white">Railway</span>  
@@ -104,7 +100,6 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
-            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
             
           />
           <span className="font-semibold text-white">Measuring</span>
