@@ -33,7 +33,7 @@ const Header = () => {
           aria-label="Go back to the home screen"
         >
           <Image
-            src="/logo.png"
+            src="/logo1.png"
             alt="IMS Logo"
             width={35}
             height={35}
