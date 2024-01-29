@@ -15,7 +15,7 @@ const Animation = () => {
             width={50}
             height={50}
             className="opacity-50 w-auto h-auto bg-gray-100 py-3 px-3 rounded-full"
-            style={{ opacity: 0.5 }} // Adjust the opacity value as needed (from 0 to 1)
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
 
           />
           <span className="font-semibold text-white">Measuring</span>
@@ -28,6 +28,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto group h-auto bg-gray-100 py-3 px-3 rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <Image
             src="/planeReal.jpg"
@@ -35,7 +37,11 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -bottom-[8rem] left-0 rounded-lg"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
+          <span className="font-semibold text-white">Aviation</span>
+
         </div>
 
         <div className="z-10 group absolute bottom-[5%] left-[20%] h-fit w-fit flex flex-col items-center justify-center">
@@ -45,6 +51,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto group h-auto bg-gray-100 py-3 px-3 rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <Image
             src="/shipReal.jpg"
@@ -52,7 +60,10 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
+          <span className="font-semibold text-white">Maritime</span>
         </div>
 
         <div className="z-10 group absolute bottom-[5%] left-[55%] h-fit w-fit flex flex-col items-center justify-center">
@@ -62,6 +73,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto group h-auto bg-gray-100 py-3 px-3 rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <Image
             src="/trainReal.jpg"
@@ -69,7 +82,10 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
+          <span className="font-semibold text-white">Railway</span>  
         </div>
 
         <div className="z-10 group absolute bottom-[5%] right-[8%] h-fit w-fit flex flex-col items-center justify-center">
@@ -79,6 +95,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto group h-auto bg-gray-100 py-3 px-3 rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <Image
             src="/carReal.jpg"
@@ -86,7 +104,10 @@ const Animation = () => {
             width={130}
             height={130}
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+            
           />
+          <span className="font-semibold text-white">Measuring</span>
         </div>
 
         <div className="z-10 absolute top-[15%] right-[10%] h-fit w-fit flex flex-col items-center justify-center">
@@ -96,6 +117,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <span className="font-semibold text-white">Smart in Motion</span>
         </div>
@@ -107,6 +130,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto h-auto bg-contain px-2 py-2 bg-gray-100 !object-contain rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <span className="font-semibold text-white text-base">Analysing</span>
         </div>
@@ -118,6 +143,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto h-auto bg-contain px-2 py-2 m-2 bg-gray-100 !object-contain rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <span className="font-semibold text-white text-sm">Monitoring</span>
         </div>
@@ -129,6 +156,8 @@ const Animation = () => {
             width={50}
             height={50}
             className="w-auto h-auto bg-contain px-2 py-2 m-2 bg-gray-100 !object-contain rounded-full"
+            style={{ opacity: 0.42 }} // Adjust the opacity value as needed (from 0 to 1)
+
           />
           <span className="font-semibold text-white">Testing</span>
         </div>
