@@ -29,7 +29,6 @@ const Bannner = () => {
           }}
           className="z-10 text-lg text-md md:text-xl text-white"
         >
-          PROFESSIONAL | INNOVATIVE | RELIABLE <br>
           Driving Excellence in Test Measurement and Industry 4.0 Applications
         </motion.h3>
         <motion.div
