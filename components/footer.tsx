@@ -27,7 +27,7 @@ const Footer = () => {
           </Link>
           <p className="text-gray-500 text-sm">Co Reg: 201413518WE</p>
         </div>
-        <div className="flex items-center md:items-start gap-1">
+        <div className="flex flex-col items-center md:items-start gap-1">
           <h4 className="uppercase font-medium">Company</h4>
           <ul className="text-sm flex flex-col items-center md:items-start gap-1">
             <li>
