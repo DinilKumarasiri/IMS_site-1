@@ -19,16 +19,8 @@ const About = () => {
       </p>
       <div className="text-center flex flex-col md:flex-row content-start justify-stretch pb-10 pt-10 md:px-[15rem] gap-[2.5rem] md:gap-[5rem]">
         <div className="flex flex-col md:items-start gap-1">
-          <h3 className="text-center font-semibold text-2xl">Our Expertise</h3>
+          <h3>Our Expertise</h3>
         <p>Over decades of experience in test measurement industry and innovative solutions for delivering ioT & Industry 4.0 applications,  structural monitoring,  Noise and Vibration monitoring applications across the SEA region.</p>
-          <p>
-            We are a premier high-tech solutions and service provider established in
-            2014 and we have since expanded with branches and affiliate offices in
-            the Southeast Asia region. Our core capabilities are in delivering
-            world-class and cutting-edge technology products and solutions across
-            test measurement markets.
-          </p>
-
         </div>
         <div className="flex flex-col md:items-start gap-1">
         <h3 className="text-center font-semibold text-2xl">Services</h3>
