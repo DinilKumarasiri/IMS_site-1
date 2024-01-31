@@ -16,13 +16,13 @@ const Footer = () => {
         className="font-semibold  text-2xl text-black flex items-center dark:text-white"
         aria-label="Go back to the home screen"
       >
-        {/*<Image*/}
-        {/*  src="/logo3.png"*/}
-        {/*  alt="IMS Logo"*/}
-        {/*  width={40}*/}
-        {/*  height={40}*/}
-        {/*  className="object-cover mr-2"*/}
-        {/*/>*/}
+        <Image
+          src="/logo3.png"
+          alt="IMS Logo"
+          width={40}
+          height={40}
+          className="object-cover mr-2"
+        /><br>
         IMS SYSTEMS PTE LTD
       </Link>
       <p className="text-gray-500 text-sm">Co Reg: 201413518WE</p>
