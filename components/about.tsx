@@ -17,12 +17,12 @@ const About = () => {
         world-class and cutting-edge technology products and solutions across
         test measurement markets.
       </p>
-      <div className="text-center flex flex-col md:flex-row items-center content-start justify-evenly pb-10 pt-10 md:px-[15rem] gap-[2.5rem] md:gap-[5rem]">
-        <div className="flex flex-col items-center md:items-start gap-1">
+      <div className="text-center flex flex-col md:flex-row content-start justify-evenly pb-10 pt-10 md:px-[15rem] gap-[2.5rem] md:gap-[5rem]">
+        <div className="flex flex-col  md:items-start gap-1">
           <p className="text-center font-semibold text-2xl">Our Expertise</p>
         <p>Over decades of experience in test measurement industry and innovative solutions for delivering ioT & Industry 4.0 applications,  structural monitoring,  Noise and Vibration monitoring applications across the SEA region.</p>
         </div>
-        <div className="flex flex-col items-center md:items-start gap-1">
+        <div className="flex flex-col md:items-start gap-1">
         <p className="text-center font-semibold text-2xl">Services</p>
           <p>Mechanical Drawings, Short term and Long term hardware rental for Vibration monitoring applications, Customized Data Loggers and Applications.</p>
         </div>
