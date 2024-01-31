@@ -22,9 +22,9 @@ export const navLinks = [
 ];
 
 export const partnerImages = [
-  { alt: "ASC Sensors", imgUrl: "/cmp01.png" },
-  { alt: "Gantner", imgUrl: "/cmp02.png" },
-  { alt: "Hansford Sensors", imgUrl: "/cmp03.png" },
-  { alt: "Wilcoxen Sensors", imgUrl: "/cmp04.png" },
-  { alt: "KEMO", imgUrl: "/cmp05.png" },
+  { alt: "ASC Sensors", imgUrl: "/cmp01.png" ,websiteUrl:"https://www.asc-sensors.de"},
+  { alt: "Gantner", imgUrl: "/cmp02.png" ,websiteUrl:"https://www.gantner-instruments.com"},
+  { alt: "Hansford Sensors", imgUrl: "/cmp03.png" ,websiteUrl:"https://hansfordsensors.com"},
+  { alt: "Wilcoxen Sensors", imgUrl: "/cmp04.png" ,websiteUrl:"https://wilcoxon.com"},
+  { alt: "KEMO", imgUrl: "/cmp05.png" ,websiteUrl:"https://kemo.com"},
 ];
