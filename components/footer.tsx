@@ -22,7 +22,7 @@ const Footer = () => {
           width={40}
           height={40}
           className="object-cover mr-2"
-        /><br>
+        /><br/>
         IMS SYSTEMS PTE LTD
       </Link>
       <p className="text-gray-500 text-sm">Co Reg: 201413518WE</p>
