@@ -19,14 +19,14 @@ const Footer = () => {
         <Image
           src="/logo3.png"
           alt="IMS Logo"
-          width={40}
-          height={40}
+          width={80}
+          height={80}
           className="object-cover mr-2"
         />
       </Link>
       <Link
           href="/"
-          className="font-semibold  text-2xl text-black flex items-center dark:text-white"
+          className="font-semibold  text-3xl text-black flex items-center dark:text-white"
           aria-label="Go back to the home screen"
       >
         IMS SYSTEMS PTE LTD

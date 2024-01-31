@@ -32,13 +32,13 @@ const Header = () => {
           className="font-semibold tracking-[0.2rem] text-3xl text-[#3498DB] flex items-center"
           aria-label="Go back to the home screen"
         >
-          <Image
-            src="/logo1.png"
-            alt="IMS Logo"
-            width={100}
-            height={70}
-            className="object-cover mr-2"
-          />
+          {/*<Image*/}
+          {/*  src="/logo1.png"*/}
+          {/*  alt="IMS Logo"*/}
+          {/*  width={100}*/}
+          {/*  height={70}*/}
+          {/*  className="object-cover mr-2"*/}
+          {/*/>*/}
         </Link>
         <div className="flex-1 flex items-center justify-end">
           <ul className="hidden md:flex items-center gap-3">
