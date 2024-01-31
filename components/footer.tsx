@@ -13,17 +13,17 @@ const Footer = () => {
     <div className="flex flex-col justify-center items-center gap-2">
       <Link
         href="/"
-        className="font-semibold  text-xl text-[#3498DB] flex items-center"
+        className="font-semibold  text-2xl text-black flex items-center dark:text-white"
         aria-label="Go back to the home screen"
       >
-        <Image
-          src="/logo3.png"
-          alt="IMS Logo"
-          width={40}
-          height={40}
-          className="object-cover mr-2"
-        />
-        IMS Systems
+        {/*<Image*/}
+        {/*  src="/logo3.png"*/}
+        {/*  alt="IMS Logo"*/}
+        {/*  width={40}*/}
+        {/*  height={40}*/}
+        {/*  className="object-cover mr-2"*/}
+        {/*/>*/}
+        IMS SYSTEMS PTE LTD
       </Link>
       <p className="text-gray-500 text-sm">Co Reg: 201413518WE</p>
     </div>
@@ -112,7 +112,7 @@ const Footer = () => {
       >
       AleneSoft
     </Link>
-      <PiDotOutlineFill />
+      {/*<PiDotOutlineFill />*/}
     </div>
   </div>
 </footer>
