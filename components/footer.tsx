@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="flex flex-col justify-center items-center gap-2">
       <Link
         href="/"
-        className="font-semibold  text-2xl text-black flex items-center dark:text-white"
+        className="flex items-center"
         aria-label="Go back to the home screen"
       >
         <Image
@@ -22,10 +22,16 @@ const Footer = () => {
           width={40}
           height={40}
           className="object-cover mr-2"
-        /><br/>
+        />
+      </Link>
+      <Link
+          href="/"
+          className="font-semibold  text-2xl text-black flex items-center dark:text-white"
+          aria-label="Go back to the home screen"
+      >
         IMS SYSTEMS PTE LTD
       </Link>
-      <p className="text-gray-500 text-sm">Co Reg: 201413518WE</p>
+      <p className="text-gray-500 text-sm dark:text-white">Co Reg: 201413518WE</p>
     </div>
     <div className="flex flex-col items-center md:items-start gap-1">
       <h4 className="uppercase font-medium inline-block">Company</h4>
