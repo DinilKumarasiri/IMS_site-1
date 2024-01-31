@@ -22,7 +22,7 @@ export const navLinks = [
 ];
 
 export const partnerImages = [
-  { alt: "ASC Sensors", imgUrl: "/cmp01.png" },
+  { alt: "ASC Sensors", imgUrl: "/cmp01.png", , linkUrl: "https://www.asc-sensors.de/en/applications/" },
   { alt: "Gantner", imgUrl: "/cmp02.png" },
   { alt: "Hansford Sensors", imgUrl: "/cmp03.png" },
   { alt: "Wilcoxen Sensors", imgUrl: "/cmp04.png" },
