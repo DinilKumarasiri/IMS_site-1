@@ -106,7 +106,12 @@ const Footer = () => {
       &copy; 2024 IMS Systems. All rights reserved.
     </p>
     <div className="flex gap-1 items-center justify-center text-sm text-gray-500">
-      <span>Powered by</span>
+      <span>Powered by </span>
+      <Link
+      href="https://alenesoft.com"
+      >
+      AleneSoft
+    </Link>
       <PiDotOutlineFill />
     </div>
   </div>
