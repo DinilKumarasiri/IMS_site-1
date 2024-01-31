@@ -29,7 +29,7 @@ const Header = () => {
       <nav className="flex fixed items-center py-4 px-6 lg:px-[10rem] w-full shadow-xl select-none bg-white dark:bg-gray-900 dark:text-white">
         <Link
           href="/"
-          className="font-semibold tracking-[0.2rem] text-3xl text-[#3498DB] flex items-center"
+          className="font-semibold tracking-[0.2rem] text-4xl text-black flex items-center dark:text-white"
           aria-label="Go back to the home screen"
         >
           {/*<Image*/}
@@ -39,6 +39,7 @@ const Header = () => {
           {/*  height={70}*/}
           {/*  className="object-cover mr-2"*/}
           {/*/>*/}
+
         </Link>
         <div className="flex-1 flex items-center justify-end">
           <ul className="hidden md:flex items-center gap-3">

@@ -30,6 +30,7 @@ const Footer = () => {
           aria-label="Go back to the home screen"
       >
         IMS SYSTEMS PTE LTD
+        <p className="text-black text-sm dark:text-white">PROFESSIONAL | INNOVATIVE | RELIABLE</p>
       </Link>
       <p className="text-gray-500 text-sm dark:text-white">Co Reg: 201413518WE</p>
     </div>
