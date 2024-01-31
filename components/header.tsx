@@ -39,7 +39,7 @@ const Header = () => {
           {/*  height={70}*/}
           {/*  className="object-cover mr-2"*/}
           {/*/>*/}
-          IMS SYSTEMS PTE LTD
+          IMS SYSTEMS
         </Link>
         <div className="flex-1 flex items-center justify-end">
           <ul className="hidden md:flex items-center gap-3">
