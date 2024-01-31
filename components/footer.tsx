@@ -29,9 +29,9 @@ const Footer = () => {
           className="font-semibold  text-3xl text-black flex items-center dark:text-white"
           aria-label="Go back to the home screen"
       >
-        IMS SYSTEMS PTE LTD<br/>
-        <p className="text-black text-sm dark:text-white">PROFESSIONAL | INNOVATIVE | RELIABLE</p>
+        IMS SYSTEMS PTE LTD
       </Link>
+      <p className="text-black text-sm dark:text-white">PROFESSIONAL | INNOVATIVE | RELIABLE</p>
       <p className="text-gray-500 text-sm dark:text-white">Co Reg: 201413518WE</p>
     </div>
     <div className="flex flex-col items-center md:items-start gap-1">
