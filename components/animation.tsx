@@ -102,7 +102,7 @@ const Animation = () => {
             className="hidden group-hover:block absolute -top-[9rem] left-0 rounded-lg"
             
           />
-          <span className="font-semibold text-white">Measuring</span>
+          <span className="font-semibold text-white">Automobile</span>
         </div>
 
         <div className="z-10 absolute top-[15%] right-[10%] h-fit w-fit flex flex-col items-center justify-center">
