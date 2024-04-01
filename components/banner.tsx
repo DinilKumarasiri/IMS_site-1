@@ -11,7 +11,7 @@ const Bannner = () => {
       className="relative h-screen w-full overflow-hidden items-start justify-start scroll-mt-28"
       id="banner"
     >
-      <div className="z-1 absolute w-screen h-screen bg-[url('/background.jpg')] bg-cover bg-center grayscale brightness-50 opacity-85 md:brightness-75 md:opacity-75"></div>
+      <div className="z-1 absolute w-screen h-screen bg-[url('/BG2.png')] bg-cover bg-center grayscale brightness-50 opacity-85 md:brightness-75 md:opacity-75"></div>
       <div className="z-10 h-screen md:h-auto px-10 py-16 md:py-0 flex flex-col items-center justify-center gap-5 text-center md:text-left md:items-start md:justify-normal">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
