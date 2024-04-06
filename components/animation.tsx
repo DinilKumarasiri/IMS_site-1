@@ -38,7 +38,7 @@ const Animation = () => {
             height={130}
             className="hidden group-hover:block absolute -bottom-[8rem] left-0 rounded-lg"
           />
-          <span className="font-semibold text-white">Aero & Space</span>
+          <span className="font-semibold text-white">Aero Space</span>
 
         </div>
 
